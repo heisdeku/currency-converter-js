@@ -1,0 +1,54 @@
+@import './variable';
+@import './mixins';
+
+/**reset**/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $currencyFont;
+    min-height: 100vh;
+    overflow-y: scroll;
+    scrollbar-color: black;
+    scrollbar-width: 3px;
+}
+
+.currency__grid {
+    @include display(column, false, desktop);
+}
+
+.grid__converter {
+    @include display(row, true, mobile-2);
+}
+
+.grid__currency {
+    border-radius: 8px;
+    display: block;
+    position: relative;
+    padding: 16px 12px;
+    margin: 18px 0;
+    align-self: center;
+    width: 80%;
+    height: 200px;
+    box-shadow: 3px 8px 15px 0 rgba(176, 176, 177, 0.5);
+}
+
+input {
+    border: 2px solid $baseRate;
+    outline: 0;
+    background: transparent;
+}
+
+select {
+    @extend input;
+}
+
+.button {
+    @include buttons();
+}

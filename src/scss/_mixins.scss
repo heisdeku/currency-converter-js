@@ -1,0 +1,32 @@
+@mixin display($direction, $alignment, $media) {
+    display: flex;
+    flex-direction: $direction;
+    @if $alignment {
+        justify-content: center;
+    }
+    @if ($media=='mobile') {
+        @media (max-width: 500px) {
+            flex-direction: row;
+        }
+    }
+    @else if ($media=='mobile-2') {
+        @media (max-width: 500px) {
+            flex-direction: column;
+            align-items: center;
+            >* {
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+@mixin buttons() {
+    width: 100px;
+    padding: 8px 12px;
+    &:hover {
+        background: $baseRate;
+        color: white;
+        transition: 1s ease-in;
+        transform-origin: left;
+    }
+}

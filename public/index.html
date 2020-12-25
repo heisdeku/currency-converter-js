@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converted v-0.1</title>
+    <link rel="stylesheet" href="../src/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="container col-md-12 mt-4">
+                <h2 class="text-center font-weight-bold">Currency Converter: 2021 Edition</h2>
+            </div>
+            <div class="grid col-md-12">
+                <div class="row d-flex flex-column">
+                    <div class="grid__converter col-md-12 align-self-center w-100">
+                        <input type="number" name="money-value" class="grid__converter__area px-3 py-1" placeholder="Amount">
+                        <span class="grid__converter__base">
+                          <select name="base-values" class="p-2 ml-2" id="grid__converter__base-selector">
+                            <option value="NGN">NGN</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="YEN">YEN</option>
+                            <option value="SAR">SAR</option>
+                            <option value="EFX">EFX</option>   
+                          </select>                 
+                        </span>
+                        <span class="grid__converter__other">
+                          <select name="other-values" class="p-2 ml-3" id="grid__converter__other-selector">
+                            <option value="NGN">NGN</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="YEN">YEN</option>
+                            <option value="SAR">SAR</option>
+                            <option value="EFX">EFX</option>   
+                          </select>    
+                          </select>                 
+                        </span>
+                        <span class="grid__converter__button">
+                          <input type="submit" class="ml-2 button" value="Convert">
+                        </span>
+                    </div>
+                    <div class="currency__grid">
+                        <div class="grid__currency"></div>
+                        <div class="grid__currency"></div>
+                        <div class="grid__currency"></div>
+                        <div class="grid__currency"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../src/bootstrap/js/jquery.js"></script>
+    <script src="../src/bootstrap/js/popper.js"></script>
+</body>
+
+</html>
