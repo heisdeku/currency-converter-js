@@ -1,0 +1,45 @@
+{
+    "base": "USD",
+    "index": 1.000,
+    "currencies": [{
+            "name": "NGN",
+            "value": 500,
+            "code": "USDNGN"
+        },
+        {
+            "name": "EUR",
+            "value": 1.05345,
+            "code": "USDEUR"
+
+        },
+        {
+            "name": "GBP",
+            "value": 0.8523,
+            "code": "USDGBP"
+        },
+        {
+            "name": "YEN",
+            "value": 13.05324,
+            "code": "USDYEN"
+        },
+        {
+            "name": "SAR",
+            "value": 500234,
+            "code": "USDSAR"
+        },
+        {
+            "name": "AED",
+            "value": 500324,
+            "code": "USDAED"
+        },
+        {
+            "name": "JPY",
+            "value": 14.0424,
+            "code": "USDJPY"
+        }, {
+            "name": "AUD",
+            "value": 500.234,
+            "code": "USDAUD"
+        }
+    ]
+}

@@ -13,6 +13,20 @@ body {
   scrollbar-color: black;
   scrollbar-width: 3px; }
 
+.grid__base-label {
+  color: #45589b;
+  border: 2px solid black;
+  width: 150px;
+  padding: 8px 12px;
+  margin-left: 50px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700; }
+  @media only screen and (max-width: 500px) {
+    .grid__base-label {
+      font-size: 18px;
+      margin: 10px 0 0 40px; } }
+
 .currency__grid {
   display: flex;
   flex-direction: column; }
@@ -21,7 +35,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center; }
-  @media (max-width: 500px) {
+  @media only screen and (max-width: 500px) {
     .grid__converter {
       flex-direction: column;
       align-items: center; }
@@ -38,6 +52,30 @@ body {
   width: 80%;
   height: 200px;
   box-shadow: 3px 8px 15px 0 rgba(176, 176, 177, 0.5); }
+
+.grid__currency p {
+  font-size: 30px; }
+
+.currency__name, .currency__values-base p:nth-of-type(2), .currency__values-rate p:nth-of-type(2) {
+  color: #45589b;
+  font-weight: 800; }
+
+.currency__values-base p:nth-of-type(2) {
+  color: #23c51b;
+  font-size: 26px; }
+
+.currency__values-rate p:nth-of-type(2) {
+  color: #ff3421;
+  font-size: 26px; }
+
+.currency__values {
+  height: 80%;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between; }
+
+.currency__values p {
+  font-size: 18px; }
 
 input, select {
   border: 2px solid #45589b;
