@@ -13,14 +13,14 @@
     <div class="container">
         <div class="row">
             <div class="container col-md-12 mt-4">
-                <h2 class="text-center font-weight-bold">Currency Converter: 2021 Edition</h2>
+                <h2 class="text-center font-weight-bold">Currency Converter w/ Javascript</h2>
             </div>
             <div class="grid col-md-12">
                 <div class="row d-flex flex-column">
                     <div class="grid__converter col-md-12 align-self-center w-100">
-                        <input type="number" name="money-value" class="grid__converter__area px-3 py-1" placeholder="Amount">
+                        <input type="number" name="amount" class="grid__converter__area px-3 py-1" placeholder="Amount">
                         <span class="grid__converter__base">
-                          <select name="base-values" class="p-2 ml-2" id="grid__converter__base-selector">
+                          <select name="base" class="p-2 ml-2" id="grid__converter__base-selector">
                             <option value="NGN">NGN</option>
                             <option value="USD">USD</option>
                             <option value="EUR">EUR</option>
@@ -31,7 +31,7 @@
                           </select>                 
                         </span>
                         <span class="grid__converter__other">
-                          <select name="other-values" class="p-2 ml-3" id="grid__converter__other-selector">
+                          <select name="other" class="p-2 ml-3" id="grid__converter__other-selector">
                             <option value="NGN">NGN</option>
                             <option value="USD">USD</option>
                             <option value="EUR">EUR</option>
@@ -53,7 +53,6 @@
             </div>
         </div>
     </div>
-    <script src="../src/bootstrap/js/jquery.js"></script>
     <script src="../src/js/scripts.js"></script>
 </body>
 
