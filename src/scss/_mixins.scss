@@ -5,12 +5,12 @@
         justify-content: center;
     }
     @if ($media=='mobile') {
-        @media (max-width: 500px) {
+        @include mediaQuery('500px') {
             flex-direction: row;
         }
     }
     @else if ($media=='mobile-2') {
-        @media (max-width: 500px) {
+        @include mediaQuery('500px') {
             flex-direction: column;
             align-items: center;
             >* {
@@ -24,9 +24,15 @@
     width: 100px;
     padding: 8px 12px;
     &:hover {
-        background: $baseRate;
+        background: $primary-color;
         color: white;
         transition: 1s ease-in;
         transform-origin: left;
+    }
+}
+
+@mixin mediaQuery($size) {
+    @media only screen and (max-width: $size) {
+        @content;
     }
 }
