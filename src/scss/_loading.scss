@@ -1,0 +1,49 @@
+.loading {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 45px;
+    animation: item-1 .5s linear infinite;
+    animation-delay: .20s;
+}
+
+.loading::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: -2rem;
+    border-radius: 50%;
+    height: 100%;
+    background-color: blue;
+    animation: item-1 .5s linear infinite;
+    animation-delay: .2s;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    left: 2rem;
+    border-radius: 50%;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background-color: yellow;
+    animation: item-1 .5s linear infinite;
+    animation-delay: .40s;
+}
+
+@keyframes item-1 {
+    0% {
+        transform: translateY(-80%);
+    }
+    50% {
+        transform: translateY(80%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
