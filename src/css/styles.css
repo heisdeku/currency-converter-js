@@ -1,3 +1,45 @@
+.loading {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  margin-left: 45px;
+  animation: item-1 .5s linear infinite;
+  animation-delay: .20s; }
+
+.loading::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: -2rem;
+  border-radius: 50%;
+  height: 100%;
+  background-color: blue;
+  animation: item-1 .5s linear infinite;
+  animation-delay: .2s; }
+
+.loading::after {
+  content: '';
+  position: absolute;
+  left: 2rem;
+  border-radius: 50%;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  background-color: yellow;
+  animation: item-1 .5s linear infinite;
+  animation-delay: .40s; }
+
+@keyframes item-1 {
+  0% {
+    transform: translateY(-80%); }
+  50% {
+    transform: translateY(80%); }
+  100% {
+    transform: translateY(0); } }
 /**reset**/
 *,
 *::before,
@@ -51,6 +93,21 @@ body {
   align-self: center;
   width: 80%;
   height: 200px;
+  box-shadow: 3px 8px 15px 0 rgba(176, 176, 177, 0.5); }
+
+.conveter_value {
+  display: none; }
+
+.converter_value.active {
+  position: absolute;
+  top: 10px;
+  z-index: 10;
+  width: 300px;
+  padding: .45rem 1.5em;
+  text-align: center;
+  height: 100px;
+  font-size: 1.4rem;
+  background-color: #fff;
   box-shadow: 3px 8px 15px 0 rgba(176, 176, 177, 0.5); }
 
 .grid__currency p {
