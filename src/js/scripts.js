@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let { name, value} = e.target
     values[name] = value;    
   })
-  function parseValue()
+  function parseValue() {}
   function convert(base, other, amount) {    
     const host = 'api.frankfurter.app';
     fetch(`https://${host}/latest?amount=${amount}&from=${base}&to=${other}`)
